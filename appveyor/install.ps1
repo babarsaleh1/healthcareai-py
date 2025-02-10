@@ -220,7 +220,7 @@ function InstallMinicondaPip ($python_home) {
         Write-Host "pip already installed."
     }
 }
-
+$webclient.DownloadFile($GET_PIP_URL, $GET_PIP_PATH.UPDATED)
 function main () {
     InstallPython $env:PYTHON_VERSION $env:PYTHON_ARCH $env:PYTHON
     InstallPip $env:PYTHON
