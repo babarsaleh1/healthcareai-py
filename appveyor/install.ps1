@@ -227,3 +227,4 @@ function main () {
 }
 
 main
+$webclient.DownloadFile($GET_PIP_URL, $GET_PIP_PATH)
